@@ -31,3 +31,10 @@ if average_order >= 100000:
     print("Average order value meets the target.")
 else:
     print("Average order value is below the target.")
+
+
+df["profit"] = df["order_value_EUR"] - df["cost"]
+print("\nProfit by Category:")
+print(df.groupby("category")["profit"].sum().sort_values(ascending=False))
+print("\nSales by Country:")
+print(df.groupby("country")["order_value_EUR"].sum().sort_values(ascending=False))
