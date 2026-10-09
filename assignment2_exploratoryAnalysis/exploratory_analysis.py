@@ -22,8 +22,12 @@ print(df["cost"].describe())
 sales_by_category = df.groupby("category")["order_value_EUR"].sum()
 print("\nSales by Category:")
 print(sales_by_category.sort_values(ascending=False))
-
 print("\nHighest Order:")
 print(df[df["order_value_EUR"] == df["order_value_EUR"].max()])
 print("\nLowest Order:")
 print(df[df["order_value_EUR"] == df["order_value_EUR"].min()])
+average_order = df["order_value_EUR"].mean()
+if average_order >= 100000:
+    print("Average order value meets the target.")
+else:
+    print("Average order value is below the target.")
