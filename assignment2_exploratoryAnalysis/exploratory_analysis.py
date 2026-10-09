@@ -18,3 +18,8 @@ print("\nOrder Value Statistics:")
 print(df["order_value_EUR"].describe())
 print("\nCost Statistics:")
 print(df["cost"].describe())
+
+
+sales_by_category = df.groupby("category")["order_value_EUR"].sum()
+print("\nSales by Category:")
+print(sales_by_category.sort_values(ascending=False))
