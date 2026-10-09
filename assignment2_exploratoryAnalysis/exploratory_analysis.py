@@ -19,7 +19,11 @@ print(df["order_value_EUR"].describe())
 print("\nCost Statistics:")
 print(df["cost"].describe())
 
-
 sales_by_category = df.groupby("category")["order_value_EUR"].sum()
 print("\nSales by Category:")
 print(sales_by_category.sort_values(ascending=False))
+
+print("\nHighest Order:")
+print(df[df["order_value_EUR"] == df["order_value_EUR"].max()])
+print("\nLowest Order:")
+print(df[df["order_value_EUR"] == df["order_value_EUR"].min()])
