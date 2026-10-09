@@ -38,3 +38,9 @@ print("\nProfit by Category:")
 print(df.groupby("category")["profit"].sum().sort_values(ascending=False))
 print("\nSales by Country:")
 print(df.groupby("country")["order_value_EUR"].sum().sort_values(ascending=False))
+
+
+print("\nSummary of Findings:")
+print("The average order value is 113,361.74 EUR.")
+print("Clothing has the highest total profit among product categories.")
+print("Portugal and France have the highest total sales among countries.")
