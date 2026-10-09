@@ -1,0 +1,22 @@
+Assignment 2: Data Analysis Report
+1. Data Overview
+For this assignment, I used a retail sales dataset with 1,000 rows and 10 columns. The data includes order values, costs, countries, product categories, dates, and other order information.
+I used Python and pandas to look at the first five rows, check the data types, and find missing values. There were no missing values in the dataset. I also noticed that the order values were stored as text because some numbers had commas. I removed the commas and changed them into numbers so I could calculate the statistics.
+
+2. What I Found
+The average order value is €113,361.74, while the median is €105,419.43. The highest order is €383,996.76, and the lowest is €15,100.57. The standard deviation is €61,775.34. This shows that order values are quite different from each other.
+The average cost is €94,369.31, and the median cost is €87,094.76. The standard deviation for cost is €51,540.02.
+I also compared different product categories. Clothing has the highest total profit at €2,941,938.09, followed by Games at €2,559,795.77. Other has the lowest total profit at €549,033.71.When I compared sales by country, Portugal had the highest sales at €27,796,361.83, followed by France at €25,900,678.42. Austria had the lowest sales at €190,166.35.
+
+3. My Recommendations
+First, I think the company should pay more attention to Clothing and Games because they bring in the most total profit. The company could look at ways to increase sales for these products.
+Second, I would suggest focusing more on Portugal and France when planning marketing activities. These two countries have the highest sales in the dataset.
+Third, the company should take a closer look at categories like Other and Accessories because their total profits are much lower. It could check their prices and costs to see if there are ways to improve their performance.
+
+4. Average Order Value Check
+I chose €100,000 as a target for average order value. I picked this number as a simple goal for this assignment, not because it is an official company target.
+The actual average order value is €113,361.74, which is higher than my target. My Python if/else statement also showed that the average order value meets the target.
+
+5. Questions
+After looking at the data, I still have a few questions. Do products with higher total profits also have better profit margins? Do countries with higher total sales also have higher average order values?
+I think answering these questions could help the company make better decisions in the future.
